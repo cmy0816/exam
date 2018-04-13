@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts2/iconfont.css">
+    <title>Document</title>
+    <script>
+        document.documentElement.style.fontSize = window.innerHeight / 375 * 50 + 'px';
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="iscroll-header">
+                <li>
+                    <span>星璇</span>
+                    <span>爱看</span>
+                    <span>电视剧</span>
+                    <span>电影</span>
+                    <span>综艺</span>
+                    <span>星璇</span>
+                    <span>爱看</span>
+                    <span>电视剧</span>
+                    <span>电影</span>
+                    <span>综艺</span>
+                    <span>星璇</span>
+                    <span>爱看</span>
+                    <span>电视剧</span>
+                    <span>电影</span>
+                    <span>综艺</span>
+                    <span>星璇</span>
+                    <span>爱看</span>
+                    <span>电视剧</span>
+                    <span>电影</span>
+                    <span>综艺</span>
+                </li>
+            </div>
+            <i class="icon iconfont icon-fenxiang3"></i>
+        </header>
+        <div class="search">
+            <input type="text" placeholder="斗罗大陆">
+            <i class="icon iconfont icon-fangdajing center"></i>
+            <i class="icon iconfont icon-ttpodicon1"></i>
+            <i class="icon iconfont icon-fenxiang2"></i>
+            <i class="icon iconfont icon-fenxiang3"></i>
+        </div>
+        <div class="iscroll">
+            <section>
+                <div class="swiper-container banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <h5>重磅热播</h5>
+                <ul class="list">
+                    <li>
+                        <img src="img/2.png" alt="">
+                        <p>南方有乔木</p>
+                        <lit>南方有乔木，北方有汉女</lit>
+                    </li>
+                    <li>
+                        <img src="img/3.png" alt="">
+                        <p>南方有乔木</p>
+                        <lit>南方有乔木，北方有汉女</lit>
+                    </li>
+                    <li>
+                        <img src="img/2.png" alt="">
+                        <p>南方有乔木</p>
+                        <lit>南方有乔木，北方有汉女</lit>
+                    </li>
+                    <li>
+                        <img src="img/3.png" alt="">
+                        <p>南方有乔木</p>
+                        <lit>南方有乔木，北方有汉女</lit>
+                    </li>
+                </ul>
+        </div>
+        </section>
+        <footer>
+            <h6><i class="icon iconfont icon-tian"></i><span>首页</span></h6>
+            <h6><i class="icon iconfont icon-tian"></i><span>专区</span></h6>
+            <h6><i class="icon iconfont icon-tian"></i><span>会员</span></h6>
+            <h6><i class="icon iconfont icon-tian"></i><span>热点</span></h6>
+            <h6><i class="icon iconfont icon-tian"></i><span>我的</span></h6>
+        </footer>
+    </div>
+</body>
+<script src='js/swiper-3.4.2.min.js'></script>
+<script src='js/iscroll.js'></script>
+<script>
+    new IScroll('.iscroll-header', {
+        scrollX: true,
+        scrollY: false
+    });
+    new Swiper('.banner');
+    new IScroll('.iscroll', {
+        scrollX: false,
+        scrollY: true
+    });
+</script>
+
+</html>
