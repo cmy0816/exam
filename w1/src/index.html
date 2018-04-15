@@ -5,9 +5,45 @@
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no' />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="fonts2/iconfont.css">
+
+    <script>
+        document.documentElement.style.fontSize = window.innerHeight / 375 * 50 + 'px';
+    </script>
     <title>Document</title>
 </head>
 
 <body>
+    <div class="wrap">
+        <header>
+            <i class="icon iconfont icon-share6"></i>
+            <span>上海</span>
+            <input type="text" class="search" placeholder="输入小区地址搜索房源">
+            <i class="icon iconfont icon-fangdajing"></i>
+        </header>
+        <div class='title'>
+            <span>位置<i class="icon iconfont icon-angle-down"></i></span>
+            <span>租金<i class="icon iconfont icon-angle-down"></i></span>
+            <span>合租<i class="icon iconfont icon-angle-down"></i></span>
+            <span>更多<i class="icon iconfont icon-angle-down"></i></span>
+        </div>
+        <section>
+
+        </section>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="fonts2/iconfont.css">
+<script src='js/jQ.js'></script>
+<script>
+    $.ajax({
+        url: '/datas',
+        success: (data) => {
+            console.log(data);
+        }
+    })
+</script>
